@@ -1,0 +1,55 @@
+<div class="pepe">
+  <div class="" *ngIf="series">
+    <div class="row justify-content-center align-items-center">
+      <div class="movie-card" *ngFor="let serie of series">
+        <a routerLink="/serie/{{serie.id}}">
+          <div class="movie-header serieImage" [ngStyle]="{'background-image': 'url('+serie.image+')'}">
+            <div class="header-icon-container">
+              <!-- <a href="#"> -->
+              <i class="material-icons header-icon fa fa-play-circle"></i>
+              <!-- </a> -->
+            </div>
+          </div>
+          <!--movie-header-->
+          <div class="movie-content">
+            <div class="movie-content-header">
+              <h3 class="movie-title">{{serie.title}}</h3>
+              <div class="imax-logo"></div>
+            </div>
+            <div class="movie-info">
+              <div class="info-section">
+                <label>{{serie.genre}}</label>
+                <span>
+                  <ngb-rating [rate]="serie.rate"></ngb-rating>
+                </span>
+              </div>
+              <!--date,time-->
+              <div class="info-section">
+                <label>Desde</label>
+                <span>{{serie.since}}</span>
+              </div>
+              <!--screen-->
+              <div class="info-section">
+                <label>TEMPORADAS</label>
+                <span>{{serie.seasons}}</span>
+              </div>
+              <!--row-->
+              <div class="info-section">
+                <label>EPISODIOS</label>
+                <span>{{serie.episodes}}</span>
+              </div>
+              <!--seat-->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="noResult" *ngIf="existSeries()">
+        <img src="https://minisjeremias.files.wordpress.com/2009/12/sin-resultados1.png?w=249" alt="">
+      </div>
+
+    </div>
+    <!-- <div class="comments">
+        <app-comments></app-comments>
+      </div> -->
+  </div>
+</div>

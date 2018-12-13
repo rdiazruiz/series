@@ -1,0 +1,13 @@
+<div class="pepe">
+  <div class="login-wrap">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form">
+        <input type="text" placeholder="Usuario" formControlName="email" required/>
+        <input type="password" placeholder="Contraseña" require formControlName="password" required/>
+        <button type="submit"> Iniciar sesion </button>
+        <!-- <a href="#"> <p> Don't have an account? Register </p></a> -->
+      </div>
+    </form>
+  </div>
+</div>

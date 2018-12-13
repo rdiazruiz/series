@@ -1,0 +1,44 @@
+.bg-image {
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: -12%;
+  z-index: 0;
+  height: 30vw;
+}
+
+.topnav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #111111;
+  z-index: 5;
+
+}
+
+.topnav a.active {
+  color: #168d96;
+}
+
+
+.marginManual{
+  margin-left: -410px !important;
+}
+
+.welcomeUser{
+  color: white;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+// sssssssssssssssssssssssssssssssssssssssss
+
+button:focus {
+    outline: 0;
+  }
+  
+  .navbar .dropdown-menu .form-control {
+    width: 200px;
+  }

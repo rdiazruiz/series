@@ -1,0 +1,46 @@
+<div *ngIf="serie">
+  <div class="pepe" [ngStyle]="{'background-image': 'url('+serie.background+')'}"></div>
+  <div class="details" [ngClass]="{'detailsHover': changeHover }">
+  </div>
+  <div class="text">
+    <div class="imageText">
+      <img src="{{serie.image}}" alt="">
+    </div>
+    <div class="titleGenre">
+      <h3>{{serie.title}}, {{serie.genre}}</h3>
+    </div>
+    <div class="seasons">
+      <h6>Temporadas: {{serie.seasons}}</h6>
+    </div>
+    <div class="episodes">
+      <h6>Episodios: {{serie.episodes}}</h6>
+    </div>
+    <div class="since">
+      <h6>Desde: {{serie.since}}</h6>
+    </div>
+    <div class="rate">
+      <span class="rating">
+        <ngb-rating [rate]="serie.rate"></ngb-rating>
+      </span>
+    </div>
+    <div class="synopsis">
+      {{serie.synopsis}}
+    </div>
+
+
+  </div>
+  <div class="allDetails" (mouseenter)="change()" (mouseleave)="change()"></div>
+  <div class="trailer">
+    <iframe class="video" [src]="urlSaneada" frameborder="0" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>Ver Trailers</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="dropdown-item" *ngFor="let seasons of serie.details.linkSeasons" (click)="getUrlVideo(seasons.url)">{{seasons.name}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,158 @@
+.pepe{
+    top: 308px;
+    color: black;
+    width: 100vw;
+    /* background-color: #329596; */
+    background-color:rgb(207, 210, 212);
+    margin: 0%;
+    position: sticky;
+    bottom: -800px;
+    margin-top: -35px;
+    padding-top: 43px;
+    margin-bottom: 0px;  
+    height: 50vw;
+    /* -webkit-filter: blur(2px); */
+  }
+  
+  
+  .details{
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #d6d6d6;
+    position: absolute;
+    height: 22vw;
+    width: 35vw;
+    z-index: 1;
+    margin-left: 9%;
+    margin-top: -33%;
+    border-style: outset;
+    border-width: 4px;
+    opacity: 0.7;
+    border-color: black;
+    border-radius: 8px;
+  }
+  
+  /* .text:hover{
+    background-color: #d6d6d6;
+    border: 5px solid rgb(0, 0, 0);
+  } */
+  
+  .allDetails{
+    position: absolute;
+    height: 22vw;
+    width: 35vw;
+    z-index: 3;
+    margin-left: 9%;
+    margin-top: -33%;
+  }
+  
+  .detailsHover {
+    /* background-color: red; */
+    opacity: 1;
+    box-shadow: 30px 30px 100px rgba(245, 245, 245, 0.37);
+  }
+  
+  .trailer{
+    position: absolute;
+    height: 22vw;
+    width: 35vw;
+    z-index: 1;
+    margin-left: 55%;
+    margin-top: -33%;
+  }
+  
+  .video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+  }
+  
+  .text{
+    position: absolute;
+    height: 22vw;
+    width: 35vw;
+    z-index: 2;
+    margin-left: 9%;
+    margin-top: -33%;
+  }
+  
+  .imageText{
+    height: 21vh;
+    width: 16vh;
+    margin-left: 2%;
+    margin-top: 2%;
+    position: cover;
+  }
+  
+  .imageText img{
+    height: 20vh;
+    border-radius: 6px;
+  }
+  
+  .seasons{
+    position: absolute;
+    height: 2vw;
+    width: 24vw;
+    z-index: 2;
+    margin-left: 28%;
+    margin-top: -23%;
+    /* background: yellow; */
+  }
+  
+  .titleGenre{
+    position: absolute;
+    height: 2vw;
+    width: 24vw;
+    z-index: 2;
+    margin-left: 28%;
+    margin-top: -29%;
+    /* background: red; */
+  }
+  
+  
+  .episodes{
+    position: absolute;
+    height: 2vw;
+    width: 24vw;
+    z-index: 2;
+    margin-left: 28%;
+    margin-top: -18%;
+    /* background:#75ebf3; */
+  }
+  
+  .since{
+    position: absolute;
+    height: 2vw;
+    width: 24vw;
+    z-index: 2;
+    margin-left: 28%;
+    margin-top: -12%;
+    /* background: orangered; */
+  }
+  
+  .rate{
+    position: absolute;
+    height: 2vw;
+    width: 24vw;
+    z-index: 2;
+    margin-left: 28%;
+    margin-top: -7%;
+    /* background: pink; */
+  }
+  
+  .synopsis{
+    position: absolute;
+    height: 2vw;
+    width: 33vw;
+    z-index: 2;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  
+  .rating{
+      font-size: 1.5rem;
+      color: #bbb800;
+      
+  }

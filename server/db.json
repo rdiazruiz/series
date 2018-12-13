@@ -1,0 +1,274 @@
+{
+  "genres": [
+    "Comedia",
+    "Drama",
+    "Acción",
+    "Ciencia Ficción",
+    "Terror",
+    "Thriller",
+    "Romantico",
+    "Aventura"
+  ],
+  "series": [
+    {
+      "id": 0,
+      "title": "The Walking Dead",
+      "genre": "Terror",
+      "image": "https://vignette.wikia.nocookie.net/thewalkingdead/images/3/39/The_Walking_Dead.jpg/revision/latest?cb=20111109184928&path-prefix=es",
+      "banner": "https://blutv-images.akamaized.net/q/t/i/bluv2/86/0x0/5ba08c05866ac311982f9447",
+      "background": "http://s1.bwallpapers.com/wallpapers/2013/12/20/the-walking-dead-photo_015035.jpg",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 9,
+      "episodes": 131,
+      "rate": 4,
+      "since": 2014,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=R1v0uFms68U",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=1OZ0mu8Ey6A",
+            "name": "Temporada 2"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nF0Y0J-1Q9E",
+            "name": "Temporada 3"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=QsJqqIXXhI0",
+            "name": "Temporada 4"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=914EPrQdUY8",
+            "name": "Temporada 5"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cgX1geb4FlA",
+            "name": "Temporada 6"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nq-6S1GphDs",
+            "name": "Temporada 7"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=FGcxBeDuOwI",
+            "name": "Temporada 8"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5rFPAgnl3rs",
+            "name": "Temporada 9"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "firstName": "Oscar",
+          "lastName": "Mayer",
+          "avatar": "https://api.adorable.io/avatars/285/a",
+          "date": "12/12/2018",
+          "rate": 4,
+          "comment": "Esta serie tiene mucha paja, por lo demas es entretenida."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "The Punisher",
+      "genre": "Acción",
+      "image": "https://www.eldiario.es/fotos/Foto-netflixes_EDIIMA20180105_0526_5.jpg",
+      "banner": "https://overmental.com/wp-content/uploads/2015/12/daredevil-season-two.jpg",
+      "background": "https://i.pinimg.com/originals/96/b2/3b/96b23bc761c38ee644e60d2b29502fed.jpg",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 2,
+      "episodes": 13,
+      "rate": 4,
+      "since": 2017,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=Cr1Ri_zDV0Y",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=T3QLSgx0uPc",
+            "name": "Temporada 2"
+          }
+        ]
+      },
+      "comments": []
+    },
+    {
+      "id": 2,
+      "title": "Breaking Bad",
+      "genre": "Drama",
+      "image": "http://www.icmedianet.org/wp/ndog/wp-content/uploads/2014/05/Breaking-bad.jpg",
+      "banner": "https://good-torrent.com/_sf/0/90.jpg",
+      "background": "https://images4.alphacoders.com/258/thumb-1920-258026.png",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 5,
+      "episodes": 62,
+      "rate": 3,
+      "since": 2012,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=HhesaQXLuRY",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qqNrz_U7NRk",
+            "name": "Temporada 2"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ZK2IQ3LbLYk",
+            "name": "Temporada 3"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=A1hk9q2iCWo",
+            "name": "Temporada 4"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=3oFofYisAko",
+            "name": "Temporada 5"
+          }
+        ]
+      },
+      "comments": []
+    },
+    {
+      "id": 3,
+      "title": "Vikings",
+      "genre": "Drama",
+      "image": "https://1.bp.blogspot.com/-7zdQ2uQH1-g/WSs9sz1hjFI/AAAAAAAAJBk/u3irtCFk94UAQR7kj584NyOkHtx7B9ESACLcB/s1600/vikings-temporada-1.jpg",
+      "banner": "http://4.bp.blogspot.com/-iV8ouMbNlKo/Vno6naDLztI/AAAAAAAAdH4/7kc4MDYWGVk/s00/Vikings_Season_4_Official_Banner_JPosters.jpg",
+      "background": "https://images.alphacoders.com/691/thumb-1920-691791.jpg",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 5,
+      "episodes": 89,
+      "rate": 5,
+      "since": 2013,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=9qJxz_SX_as",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=yRl-dYAL6xw",
+            "name": "Temporada 2"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5URtbnY6rok",
+            "name": "Temporada 3"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=FLurEJN5KcY&t=4s",
+            "name": "Temporada 4"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=SLOa9s1q_Ug",
+            "name": "Temporada 5"
+          }
+        ]
+      },
+      "comments": []
+    },
+    {
+      "id": 4,
+      "title": "Los 100",
+      "genre": "Aventura",
+      "image": "http://es.web.img2.acsta.net/r_1920_1080/pictures/18/11/06/15/15/5211161.jpg",
+      "banner": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/home/season-06/160223-s6-key-art-1920x700.jpg",
+      "background": "https://wallpapercave.com/wp/wp1825208.jpg",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 6,
+      "episodes": 84,
+      "rate": 3,
+      "since": 2014,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=2NUnsXkcX4E",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=IW7_ZzFZF-o",
+            "name": "Temporada 2"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=kxkM6wLowAw",
+            "name": "Temporada 3"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=JQi2MAfpACI",
+            "name": "Temporada 4"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=giiIq7t4oMQ",
+            "name": "Temporada 5"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=7PjSe2TQgB0",
+            "name": "Temporada 6"
+          }
+        ]
+      },
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "La Casa de Papel",
+      "genre": "Drama",
+      "image": "https://images.clarin.com/2018/04/10/HJKlUisof_720x0__1.jpg",
+      "banner": "http://paprica.org/wp-content/uploads/2018/03/DESTACAO253c.jpg",
+      "background": "https://bombanoise.com/wp-content/uploads/2018/10/La-Casa-de-Papel.jpg",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae deleniti id voluptatibus illum quas nostrum aliquid laudantium exercitationem amet tenetur impedit alias, reprehenderit at. Ducimus culpa blanditiis dolores itaque?",
+      "seasons": 3,
+      "episodes": 15,
+      "rate": 4,
+      "since": 2017,
+      "details": {
+        "linkSeasons": [
+          {
+            "url": "https://www.youtube.com/watch?v=rLTD_AD91uE",
+            "name": "Temporada 1"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=nJ0Jik9Tokk",
+            "name": "Temporada 2"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=EIo2l9btZSk",
+            "name": "Temporada 3"
+          }
+        ]
+      },
+      "comments": []
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "firstName": "Oscar",
+      "lastName": "Mayer",
+      "password": "salchicha",
+      "email": "oscar.mayer@gmail.com",
+      "tags": [],
+      "avatar": "https://api.adorable.io/avatars/285/a",
+      "rol": "0",
+      "hash": "zg3ks548prgctsm8ap3b"
+    },
+    {
+      "id": 0,
+      "firstName": "Pablo",
+      "lastName": "Escobar",
+      "password": "plataoplomo",
+      "email": "pablo.escobar@gmail.com",
+      "tags": [],
+      "avatar": "https://api.adorable.io/avatars/285/a",
+      "rol": "1"
+    }
+  ]
+}

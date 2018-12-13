@@ -1,0 +1,8 @@
+<div class="col">
+    <form [formGroup]="commentsForm" (ngSubmit)="onSubmit()">
+        <input type="hidden" formControlName="idSerie" value="0" required>
+        <textarea formControlName="comment" placeholder="Danos tu opinion" rows="8" cols="80" required></textarea>
+        <br>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</div>
