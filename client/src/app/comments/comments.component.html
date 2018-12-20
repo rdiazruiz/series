@@ -1,8 +1,56 @@
-<div class="col">
-    <form [formGroup]="commentsForm" (ngSubmit)="onSubmit()">
-        <input type="hidden" formControlName="idSerie" value="0" required>
-        <textarea formControlName="comment" placeholder="Danos tu opinion" rows="8" cols="80" required></textarea>
-        <br>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
+<div class="background-comments" *ngIf="serie">
+    <div class="container title-comments">
+        <div class="row">
+            <h5 class="comm">Comentarios</h5>
+        </div>
+        <hr>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div *ngIf="serie.comments.length < 1">
+                    <div class="alert alert-info" role="alert">
+                            <strong>¡Aún no hay comentarios!</strong> Se el primero en comentar.
+                        </div>
+            </div>
+        </div>
+        <div class="content-comment" *ngFor="let serie of serieById.comments">
+            <div class="row">
+                <div class="col-1 mt-1 ml-2">
+                    <img src="{{serie.avatar}}" class="avatar">
+                </div>
+                <div class="col-2 text-left user mt-1">
+                    <b>{{serie.firstName}} {{serie.lastName}}</b>
+                </div>
+                <div class="col date text-right mt-1 mr-2">
+                    {{serie.date}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="text ml-3">
+                    {{serie.comment}}
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="container txt-area-comments">
+        <h5>Escribe aqui tu comentario:</h5>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-sm" *ngIf="token">
+                <form [formGroup]="commentsForm" (ngSubmit)="onSubmit()">
+                    <textarea formControlName="comment" placeholder="Danos tu opinion" id="txtArea" rows="5" cols="80"
+                        required></textarea>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm" *ngIf="!token">
+                <div class="alert alert-info" role="alert">
+                    <strong>¡Aviso!</strong> Para aportar un comentario se necesita iniciar sesión. <a [routerLink]="['/login']">Acceder
+                        al login</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

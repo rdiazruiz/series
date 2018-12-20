@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { HttpHeaders } from '@angular/common/http';
+import { CommentsService } from './comments.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-comments',
@@ -8,21 +11,42 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class CommentsComponent implements OnInit {
   commentsForm = new FormGroup({
-    comment: new FormControl(''),
-    idSerie: new FormControl('')
+    comment: new FormControl('')
   });
 
-  constructor() { }
+  token;
+  id;
+
+  constructor(private commentsService: CommentsService, private _route: ActivatedRoute) { }
+  @Input() serie: any;
+  serieById: any;
 
   ngOnInit() {
+    this.id = this._route.snapshot.paramMap.get('id');
+    this.token = sessionStorage.getItem('hash');
+    this.token = this.token ? this.token.substr(9, 20) : '';
+
+    this.commentsService.getComments(this.id);
+    this.commentsService.getCommentsObservable().subscribe(serieId => {
+      this.serieById = serieId;
+    });
   }
 
   onSubmit() {
     const comments = {
-      comment: this.commentsForm.controls['comment'].value,
-      idSerie: this.commentsForm.controls['idSerie'].value
+      idSerie: this.serie.id,
+      comment: this.commentsForm.controls['comment'].value
     };
-    console.log(comments);
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.token
+      })
+    };
+
+    this.commentsService.postComments(httpOptions, comments);
+
   }
 
 }

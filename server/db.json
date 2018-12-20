@@ -64,12 +64,28 @@
       },
       "comments": [
         {
+          "firstName": "Pablo",
+          "lastName": "Escobar",
+          "avatar": "https://api.adorable.io/avatars/285/g",
+          "date": "19/12/2018",
+          "rate": 4,
+          "comment": "Esta serie tiene mucha paja!!!!"
+        },
+        {
           "firstName": "Oscar",
           "lastName": "Mayer",
           "avatar": "https://api.adorable.io/avatars/285/a",
-          "date": "12/12/2018",
+          "date": "19/12/2018",
           "rate": 4,
-          "comment": "Esta serie tiene mucha paja, por lo demas es entretenida."
+          "comment": "La unica temporada que vale es la primera"
+        },
+        {
+          "firstName": "Oscar",
+          "lastName": "Mayer",
+          "avatar": "https://api.adorable.io/avatars/285/a",
+          "date": "19/12/2018",
+          "rate": 4,
+          "comment": "david caca"
         }
       ]
     },
@@ -97,7 +113,16 @@
           }
         ]
       },
-      "comments": []
+      "comments": [
+        {
+          "firstName": "Oscar",
+          "lastName": "Mayer",
+          "avatar": "https://api.adorable.io/avatars/285/a",
+          "date": "20/12/2018",
+          "rate": 4,
+          "comment": "hola"
+        }
+      ]
     },
     {
       "id": 2,
@@ -135,7 +160,16 @@
           }
         ]
       },
-      "comments": []
+      "comments": [
+        {
+          "firstName": "Oscar",
+          "lastName": "Mayer",
+          "avatar": "https://api.adorable.io/avatars/285/a",
+          "date": "20/12/2018",
+          "rate": 4,
+          "comment": "asd"
+        }
+      ]
     },
     {
       "id": 3,
@@ -258,7 +292,7 @@
       "tags": [],
       "avatar": "https://api.adorable.io/avatars/285/a",
       "rol": "0",
-      "hash": "zg3ks548prgctsm8ap3b"
+      "hash": "jz6r5csc2qgp1p72lypn"
     },
     {
       "id": 0,
@@ -267,8 +301,9 @@
       "password": "plataoplomo",
       "email": "pablo.escobar@gmail.com",
       "tags": [],
-      "avatar": "https://api.adorable.io/avatars/285/a",
-      "rol": "1"
+      "avatar": "https://api.adorable.io/avatars/285/g",
+      "rol": "1",
+      "hash": "r1da4zpixva393q0qy31"
     }
   ]
 }

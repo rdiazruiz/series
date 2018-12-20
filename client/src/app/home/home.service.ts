@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
+import { LoginService } from '../login/login.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 export class HomeService {
 
   private listSeries = new BehaviorSubject(null);
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loginService: LoginService) { }
 
   getSeries() {
     return this.listSeries.asObservable();
@@ -36,5 +37,11 @@ export class HomeService {
         this.listSeries.next(series);
       });
     }
+  }
+
+  postComments(authorization, comment) {
+    console.log(comment.idSerie);
+    this.http.post('http://localhost:3000/api/comment', comment, authorization).subscribe();
+
   }
 }

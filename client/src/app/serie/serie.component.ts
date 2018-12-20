@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { HomeService } from '../home/home.service';
+import { CommentsService } from '../comments/comments.service';
 
 @Component({
   selector: 'app-serie',
@@ -18,7 +19,7 @@ export class SerieComponent implements OnInit {
   changeHover = false;
 
   constructor(private _route: ActivatedRoute,
-    private homeService: HomeService, private sanitizer: DomSanitizer, config: NgbRatingConfig) {
+    private homeService: HomeService, private sanitizer: DomSanitizer, config: NgbRatingConfig, private commentsService:CommentsService) {
     config.max = 5;
     config.readonly = true;
   }
@@ -34,8 +35,7 @@ export class SerieComponent implements OnInit {
         this.serie = serie;
         this.getUrlVideo(serie.details.linkSeasons[0].url);
       },
-      (err) => console.log(err),
-      // () => console.log(this.serie)
+      (err) => console.log(err)
     );
   }
 

@@ -11,18 +11,19 @@ export class HeaderComponent implements OnInit {
   subscription;
   serie;
   user;
+  hash;
   constructor(private homeService: HomeService, private loginService: LoginService) { }
 
 
   ngOnInit() {
     this.getBanner();
-    const hash = sessionStorage.getItem('hash') ? JSON.parse(sessionStorage.getItem('hash')).hash : undefined;
+    this.hash = sessionStorage.getItem('hash') ? JSON.parse(sessionStorage.getItem('hash')).hash : undefined;
     this.getUser().subscribe(user => {
       console.log(user);
       this.user = user;
     });
-    if (hash) {
-      this.loginService.getUserProfile(hash);
+    if (this.hash) {
+      this.loginService.getUserProfile(this.hash);
     }
   }
 
@@ -51,7 +52,8 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
-    this.loginService.getLogout();
+    this.hash = sessionStorage.getItem('hash') ? JSON.parse(sessionStorage.getItem('hash')).hash : undefined;
+    this.loginService.getLogout(this.hash);
   }
 
 }

@@ -48,11 +48,11 @@ export class LoginService {
   }
 
 
-  getLogout() {
+  getLogout(hash) {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': this.hash
+        'Authorization': hash
       })
     };
     this.http.delete('http://localhost:3000/api/session', httpOptions).subscribe(logout => {

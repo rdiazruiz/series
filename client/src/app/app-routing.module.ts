@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'serie/:id', component: SerieComponent },
   { path: 'contacto', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'comment', component: CommentsComponent },
   { path: '**', redirectTo: '/home'},
 ];
 
