@@ -6,7 +6,7 @@
         <input type="text" placeholder="Usuario" formControlName="email" required/>
         <input type="password" placeholder="Contraseña" require formControlName="password" required/>
         <button type="submit"> Iniciar sesion </button>
-        <!-- <a href="#"> <p> Don't have an account? Register </p></a> -->
+        <a [routerLink]="['/register']"> <p> Aún no tienes cuenta? Registrate </p></a>
       </div>
     </form>
   </div>

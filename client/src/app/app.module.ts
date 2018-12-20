@@ -13,6 +13,7 @@ import { SerieComponent } from './serie/serie.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommentsComponent } from './comments/comments.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CommentsComponent } from './comments/comments.component';
     HomeComponent,
     SerieComponent,
     LoginComponent,
-    CommentsComponent
+    CommentsComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,

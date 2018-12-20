@@ -291,19 +291,17 @@
       "email": "oscar.mayer@gmail.com",
       "tags": [],
       "avatar": "https://api.adorable.io/avatars/285/a",
-      "rol": "0",
-      "hash": "jz6r5csc2qgp1p72lypn"
+      "rol": "0"
     },
     {
-      "id": 0,
+      "id": 1,
       "firstName": "Pablo",
       "lastName": "Escobar",
       "password": "plataoplomo",
       "email": "pablo.escobar@gmail.com",
       "tags": [],
       "avatar": "https://api.adorable.io/avatars/285/g",
-      "rol": "1",
-      "hash": "r1da4zpixva393q0qy31"
+      "rol": "1"
     }
   ]
 }

@@ -72,6 +72,37 @@ low(adapter)
             }
         }
 
+        // Registro de usuario
+        app.post('/api/register', (req, res, next) => {
+            var body = req.body;
+            var validUser = db.get('users').filter(user=>{return user.email === body.email}).value();
+            
+            if(validUser.length > 0){
+                res.status(400).send({message: 'user existent'});
+            } else {
+                var id = db.get('users').last().value().id + 1;
+
+                var object = {
+                    id: id,
+                    firstName: body.firstName,
+                    lastName: body.lastName,
+                    password: body.password,
+                    email: body.email,
+                    tags: [],
+                    avatar: 'https://api.adorable.io/avatars/285/a',
+                    rol: '0'
+                }
+
+                var users = db.get('users').value();
+                users.push(object);
+
+                db.get('users').write(users).then(() => {
+                    res.status(200).send({ message: 'Succesful, user registrared' });
+                });
+            }
+        });
+
+        //Obterner perfil de usuario
         app.get('/api/profile', (req, res, next) => {
             var token = req.headers.authorization;
             var userdb = authorization(token);
@@ -91,7 +122,7 @@ low(adapter)
             }
         });
 
-
+        // Inicio de sesion
         app.post('/api/session', (req, res, next) => {
             var hash = createHash(hashLength);
             var email = req.body.email;
@@ -162,7 +193,7 @@ low(adapter)
                     .find(serie => serie.id === parseInt(idSerie)).value();
 
                 serie['comments'].push(object);
-                
+
                 db.get('series').find(s => s.id === parseInt(idSerie)).write(serie).then(() => {
                     res.status(200).send({ message: 'Succesful' });
                 });
